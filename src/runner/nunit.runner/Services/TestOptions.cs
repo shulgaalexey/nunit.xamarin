@@ -21,7 +21,12 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
+using NUnit.Runner.Helpers;
 using PCLStorage;
+
+#if TIZEN
+using Tizen.Applications;
+#endif
 
 namespace NUnit.Runner.Services
 {
@@ -39,7 +44,15 @@ namespace NUnit.Runner.Services
         /// </summary>
         public TestOptions()
         {
+            NUnitLogs.LogMessage($"TestOptions entered");
+#if TIZEN
+            NUnitLogs.LogMessage($"OutputXmlReportName: {OutputXmlReportName}");
+            NUnitLogs.LogMessage($"Base path: {Application.Current.DirectoryInfo.Data}");
+            _resultFilePath = Application.Current.DirectoryInfo.Data + OutputXmlReportName;
+#else
             _resultFilePath = System.IO.Path.Combine(FileSystem.Current.LocalStorage.Path, OutputXmlReportName);
+#endif
+            NUnitLogs.LogMessage($"TestOptions finished");
         }
 
         /// <summary>

@@ -1,10 +1,13 @@
 ﻿{
-  "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "NUnit": "3.6.1",
-    "PCLStorage": "1.0.2",
-    "Xamarin.Forms": "1.5.0.6447"
-  },
+    "dependencies": {
+        "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+        "NUnit": "3.6.1",
+        "PCLStorage": "1.0.2",
+        "Xamarin.Forms": "1.5.0.6447",
+
+        // For Tizen
+        "Tizen.NET": "3.0.0"
+    },
   "frameworks": {
     "uap10.0": {}
   },

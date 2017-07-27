@@ -14,6 +14,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\XamarinExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\NUnitLogs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\TestRunResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\TestPackage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Messages\ErrorMessage.cs" />
