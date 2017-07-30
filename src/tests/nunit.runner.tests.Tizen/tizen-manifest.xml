@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="nunit.runner.tests.Tizen" version="1.0.0">
+	<profile name="common" />
+	<ui-application appid="org.tizen.example.nunit.runner.tests.Tizen"
+					exec="nunit.runner.tests.Tizen.exe"
+					type="dotnet"
+					multiple="false"
+					taskmanage="true"
+					nodisplay="false"
+					launch_mode="single">
+  <label>nunit.runner.tests.Tizen</label>
+	<icon>nunit.runner.tests.Tizen.png</icon>
+	</ui-application>
+</manifest>

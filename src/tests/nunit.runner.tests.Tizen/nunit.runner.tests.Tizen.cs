@@ -1,6 +1,6 @@
 using System;
 
-namespace nunit.runner.tests.Tizen.Tizen
+namespace nunit.runner.tests.Tizen
 {
     class Program : global::Xamarin.Forms.Platform.Tizen.FormsApplication
     {

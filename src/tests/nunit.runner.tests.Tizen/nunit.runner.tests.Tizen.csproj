@@ -7,11 +7,11 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{2F98DAC9-6F16-457B-AED7-D43CAC379341};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{544CF772-7D2A-4846-AAB8-6DEA7B595A97}</ProjectGuid>
+    <ProjectGuid>{A435DE88-6CD0-4F9B-ABD0-5B899DB24FC8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>nunit.runner.tests.Tizen.Tizen</RootNamespace>
-    <AssemblyName>nunit.runner.tests.Tizen.Tizen</AssemblyName>
+    <RootNamespace>nunit.runner.tests.Tizen</RootNamespace>
+    <AssemblyName>nunit.runner.tests.Tizen</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <DefaultLanguage>en-US</DefaultLanguage>
   </PropertyGroup>
@@ -44,13 +44,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="nunit.runner.tests.Tizen.Tizen.project.json" />
+    <None Include="nunit.runner.tests.Tizen.project.json" />
     <None Include="tizen-manifest.xml" />
-    <None Include="shared\res\nunit.runner.tests.Tizen.Tizen.png" />
+    <None Include="shared\res\nunit.runner.tests.Tizen.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="nunit.runner.tests.cs" />
     <Compile Include="nunit.runner.tests.Tizen.cs" />
-    <Compile Include="nunit.runner.tests.Tizen.Tizen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

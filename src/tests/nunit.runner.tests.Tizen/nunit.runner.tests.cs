@@ -5,7 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace nunit.runner.tests.Tizen
+namespace nunit.runner.tests
 {
     public class App : Application
     {

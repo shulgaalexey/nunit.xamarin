@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("nunit.runner.tests.Tizen.Tizen")]
+[assembly: AssemblyTitle("nunit.runner.tests.Tizen")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("nunit.runner.tests.Tizen.Tizen")]
+[assembly: AssemblyProduct("nunit.runner.tests.Tizen")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("544cf772-7d2a-4846-aab8-6dea7b595a97")]
+[assembly: Guid("a435de88-6cd0-4f9b-abd0-5b899db24fc8")]
 
 // Version information for an assembly consists of the following four values:
 //
