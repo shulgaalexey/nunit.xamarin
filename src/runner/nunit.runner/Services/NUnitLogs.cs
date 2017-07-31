@@ -1,8 +1,8 @@
-﻿#if TIZEN
+﻿#if __TIZEN__
     using Tizen;
 #else
     using System;
-#endif // TIZEN
+#endif // __TIZEN__
 
 namespace NUnit.Runner.Services
 {
@@ -10,11 +10,11 @@ namespace NUnit.Runner.Services
     {
         public static void LogMessage(string message)
         {
-#if TIZEN
+#if __TIZEN__
             Tizen.Log.Debug("NUNIT", $"{message}");
 #else
             System.Diagnostics.Debug.WriteLine($"{message}");
-#endif // TIZEN
+#endif // __TIZEN__
             }
         }
 }

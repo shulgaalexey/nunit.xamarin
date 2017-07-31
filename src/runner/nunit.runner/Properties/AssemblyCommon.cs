@@ -43,6 +43,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("Android Debug")]
 #elif WINDOWS_UWP
 [assembly: AssemblyConfiguration("Universal Windows Debug")]
+#elif __TIZEN__
+[assembly: AssemblyConfiguration("")]
 #else
 [assembly: AssemblyConfiguration("Debug")]
 #endif
@@ -53,6 +55,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("Android")]
 #elif WINDOWS_UWP
 [assembly: AssemblyConfiguration("Universal Windows")]
+#elif __TIZEN__
+[assembly: AssemblyConfiguration("")]
 #else
 [assembly: AssemblyConfiguration("")]
 #endif

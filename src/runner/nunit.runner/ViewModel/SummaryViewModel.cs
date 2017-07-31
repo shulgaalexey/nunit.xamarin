@@ -163,6 +163,9 @@ namespace NUnit.Runner.ViewModel
             System.Environment.Exit(0);
 #elif WINDOWS_UWP
             Windows.UI.Xaml.Application.Current.Exit();
+#elif __TIZEN__
+             // TODO check for Tizen
+            System.Environment.Exit(0);
 #endif
         }
     }

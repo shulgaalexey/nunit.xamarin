@@ -24,7 +24,7 @@
 using NUnit.Runner.Helpers;
 using PCLStorage;
 
-#if TIZEN
+#if __TIZEN__
 using Tizen.Applications;
 #endif
 
@@ -45,7 +45,7 @@ namespace NUnit.Runner.Services
         public TestOptions()
         {
             NUnitLogs.LogMessage($"TestOptions entered");
-#if TIZEN
+#if __TIZEN__
             NUnitLogs.LogMessage($"OutputXmlReportName: {OutputXmlReportName}");
             NUnitLogs.LogMessage($"Base path: {Application.Current.DirectoryInfo.Data}");
             _resultFilePath = Application.Current.DirectoryInfo.Data + OutputXmlReportName;

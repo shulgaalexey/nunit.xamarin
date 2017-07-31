@@ -36,11 +36,16 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 
+//[assembly: AssemblyConfiguration("")]
+
+
 #if DEBUG
 #if __IOS__
 [assembly: AssemblyConfiguration("iOS Debug")]
 #elif __DROID__
 [assembly: AssemblyConfiguration("Android Debug")]
+#elif __TIZEN__
+[assembly: AssemblyConfiguration("")]
 #else
 [assembly: AssemblyConfiguration("Debug")]
 #endif
@@ -49,6 +54,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("iOS 4.5")]
 #elif __DROID__
 [assembly: AssemblyConfiguration("Android 4.0")]
+#elif __TIZEN__
+[assembly: AssemblyConfiguration("")]
 #else
 [assembly: AssemblyConfiguration("")]
 #endif

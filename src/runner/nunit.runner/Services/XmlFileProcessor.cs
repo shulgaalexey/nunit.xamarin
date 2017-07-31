@@ -98,6 +98,9 @@ namespace NUnit.Runner.Services
                 {
 #if __DROID__ || __IOS__
                     IFolder folder = await FileSystem.Current.GetFolderFromPathAsync(path, CancellationToken.None);
+#elif __TIZEN__
+                    // TODO check for Tizen
+                    IFolder folder = await FileSystem.Current.GetFolderFromPathAsync(path, CancellationToken.None);
 #else
                     IFolder folder = await FileSystem.Current.GetFolderFromPathAsync(path.Replace('/', '\\'), CancellationToken.None);
 #endif
