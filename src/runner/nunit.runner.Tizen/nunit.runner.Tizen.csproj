@@ -15,7 +15,6 @@
     <FileAlignment>512</FileAlignment>
     <DefaultLanguage>en-US</DefaultLanguage>
   </PropertyGroup>
-
   <PropertyGroup>
     <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
@@ -26,8 +25,6 @@
     <NoWarn>$(NoWarn);1701</NoWarn>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
-
-
   <!--
   <PropertyGroup>
     <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
@@ -39,7 +36,6 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   -->
-
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
@@ -61,7 +57,6 @@
     <None Include="nunit.runner.Tizen.project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="nunit.runner.Tizen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="..\nunit.runner\nunit.runner.projitems" Label="Shared" />

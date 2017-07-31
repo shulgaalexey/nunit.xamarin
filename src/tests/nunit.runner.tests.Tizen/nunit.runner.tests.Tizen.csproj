@@ -49,7 +49,6 @@
     <None Include="shared\res\nunit.runner.tests.Tizen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="nunit.runner.tests.cs" />
     <Compile Include="nunit.runner.tests.Tizen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
