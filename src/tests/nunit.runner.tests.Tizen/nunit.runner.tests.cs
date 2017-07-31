@@ -7,6 +7,7 @@ using Xamarin.Forms;
 
 namespace nunit.runner.tests
 {
+    // To be substituted with NUnit App
     public class App : Application
     {
         public App()

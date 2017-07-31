@@ -57,6 +57,13 @@
     <Folder Include="lib\" />
     <Folder Include="res\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\runner\nunit.runner.Tizen\nunit.runner.Tizen.csproj">
+      <Project>{9bae2e8a-d0e8-432d-9c75-df3260283d15}</Project>
+      <Name>nunit.runner.Tizen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\nunit.runner.tests\nunit.runner.tests.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
 		Other similar extension points exist, see Microsoft.Common.targets.
