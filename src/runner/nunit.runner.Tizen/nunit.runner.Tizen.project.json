@@ -1,0 +1,15 @@
+﻿{
+    "dependencies": {
+        "NETStandard.Library": "2.0.0-preview1-25301-01",
+        "NUnit": "3.6.1",
+        "PCLStorage": "1.0.2",
+        "Tizen.NET": "3.0.0",
+        "Xamarin.Forms": "2.3.5.233-pre1"
+        //"Xamarin.Forms": "1.5.0.6447"
+    },
+	"frameworks": {
+    "netstandard2.0": {
+        "imports": [ "portable-net45+win8+wp8+wpa81"]
+    }
+	}
+}
