@@ -68,6 +68,7 @@ namespace NUnit.Runner.Services
 
             await CreateFolderRecursive(outputFolderName);
 
+
             IFolder outputFolder =
                 await FileSystem.Current.GetFolderFromPathAsync(outputFolderName, CancellationToken.None);
 
@@ -96,10 +97,7 @@ namespace NUnit.Runner.Services
             {
                 try
                 {
-#if __DROID__ || __IOS__
-                    IFolder folder = await FileSystem.Current.GetFolderFromPathAsync(path, CancellationToken.None);
-#elif __TIZEN__
-                    // TODO check for Tizen
+#if __DROID__ || __IOS__ || __TIZEN__
                     IFolder folder = await FileSystem.Current.GetFolderFromPathAsync(path, CancellationToken.None);
 #else
                     IFolder folder = await FileSystem.Current.GetFolderFromPathAsync(path.Replace('/', '\\'), CancellationToken.None);
