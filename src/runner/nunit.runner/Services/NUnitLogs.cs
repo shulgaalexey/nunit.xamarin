@@ -13,7 +13,7 @@ namespace NUnit.Runner.Services
 #if __TIZEN__
             Tizen.Log.Debug("NUNIT", $"{message}");
 #else
-            System.Diagnostics.Debug.WriteLine($"{message}");
+            System.Diagnostics.Debug.WriteLine($"NUNIT {message}");
 #endif // __TIZEN__
             }
         }

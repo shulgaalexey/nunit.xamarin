@@ -10,7 +10,7 @@ namespace nunit.runner.tests.Tizen
         {
             base.OnCreate();
 
-            NUnitLogs.LogMessage($"OnCreate***********");
+            NUnitLogs.LogMessage($"***********OnCreate***********");
 
             // Tizen will not load all tests within the current project,
             // you must do it explicitly below
