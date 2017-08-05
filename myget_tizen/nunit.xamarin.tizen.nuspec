@@ -3,15 +3,14 @@
     <metadata minClientVersion="2.8.5">
         <id>nunit.xamarin.tizen</id>
         <version>3.6.1</version>
-        <title>NUnit 3 Xamarin Runner</title>
+        <title>[Unoficial] [Experimental] NUnit 3 Xamarin Runner</title>
         <authors>Rob Prouse, Samsung Electronics</authors>
         <owners>NUnit Project, Samsung Electronics</owners>
         <description>Adds support for running NUnit 3 unit tests on Xamarin
 
 Supported Xamarin platforms:
-  - Android
-  - iOS
-  - Windows 10 Universal Apps
+  - Tizen Mobile
+  - Tizen TV 
 
  Ported to Tizen by Alex Shulga, Pawel Andruszkiewicz, Samsung Electronics 
   </description>
@@ -24,7 +23,8 @@ Supported Xamarin platforms:
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <copyright>Copyright (c) 2017 NUnit Project</copyright>
         <dependencies>
-            <group targetFramework="DNXCore5.0">
+            <!--<group targetFramework="DNXCore5.0">-->
+            <group>
                 <dependency id="nunit" version="[3.6.1]" />
                 <dependency id="Tizen" version="1.0.2" />
                 <dependency id="PCLStorage" version="1.0.1" />
